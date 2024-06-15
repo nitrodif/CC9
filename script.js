@@ -8,3 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
         .enter()
         .append("div")
         .attr("class", "data-point")
+        d3.select(this).style("background-color", "firebrick");
+    })
+    .on("mouseout", function() {
+        d3.select(this).style("background-color", "#D8BFD8"); // Thistle
+    });
